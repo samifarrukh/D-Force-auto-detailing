@@ -1,3 +1,4 @@
+import carLogo from './d logo.jpg';
 import React, { useState, useEffect } from 'react';
 import { useNavigation } from '../context/NavigationContext';
 import { BUSINESS_INFO, SERVICES, LOCATIONS } from '../data/siteData';
@@ -91,17 +92,11 @@ export const Header: React.FC = () => {
             id="brand-logo-link"
             className="flex items-center gap-2.5 group"
           >
-            <div className="w-10 h-10 bg-[#141414] rounded flex items-center justify-center border-2 border-[#D72229] shadow-sm group-hover:bg-[#D72229] transition-colors">
-              <Shield className="w-5 h-5 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-extrabold text-xl tracking-tight text-[#141414] leading-none">
-                D FORCE <span className="text-[#D72229]">AUTO DETAILING</span>
-              </span>
-              <span className="text-[10px] tracking-widest text-neutral-500 uppercase font-semibold mt-0.5">
-                Abbotsford, BC
-              </span>
-            </div>
+            <img
+  src={carLogo}
+  alt="D Force Auto Detailing"
+  className="w-18 h-18 md:w-22 md:h-22 rounded-full object-cover"
+/>
           </a>
 
           {/* Desktop Nav Links */}
