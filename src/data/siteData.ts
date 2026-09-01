@@ -1,3 +1,12 @@
+
+import f1 from '../components/f1.jpg';
+import f3 from '../components/f3.jpg';
+import f4 from '../components/f4.jpg';
+import f5 from '../components/f5.jpg';
+import f6 from '../components/f6.jpg';
+import f7 from '../components/f7.jpg';
+import f8 from '../components/f8.jpg';
+
 import { ServiceItem, LocationItem, GalleryItem } from '../types';
 
 export const BUSINESS_INFO = {
@@ -46,7 +55,7 @@ export const SERVICES: ServiceItem[] = [
       'Long-lasting hydrophobic paint protection providing deep gloss, UV resistance, and ease of washing for daily drivers and performance vehicles.',
     fullDescription:
       'Our Ceramic Coating packages offer professional-grade paint protection. By bonding directly with your vehicle’s clear coat, ceramic coatings create a semi-permanent sacrificial layer that resists road grime, UV fading, light chemical staining, and bird droppings while providing an intense candy-like gloss and remarkable hydrophobic water-beading performance.',
-    image: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80',
+    image: f5,
     altText: 'Ceramic coating application on luxury red vehicle with deep gloss reflection',
     included: [
       'Multi-stage exterior foam pre-wash and two-bucket contact wash',
@@ -112,7 +121,7 @@ export const SERVICES: ServiceItem[] = [
       'Thorough multi-step exterior wash, wheel deep cleaning, iron decontamination, bug and tar removal, trim dressing, and durable paint sealant.',
     fullDescription:
       'Does your vehicle look dull from road grime, brake dust, and Fraser Valley weather? Our Premium Exterior Cleaning is the ideal reset to restore clarity and luster. No exterior component is overlooked: paint, wheels, fender liners, exhaust tips, door jambs, glass, and exterior trim are thoroughly cleaned and conditioned.',
-    image: 'https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1200&q=80',
+    image: f4,
     altText: 'Exterior foam wash and hand detailing on black truck',
     included: [
       'Gentle snow foam pre-wash to lift loose grit safely',
@@ -174,7 +183,7 @@ export const SERVICES: ServiceItem[] = [
       'Deep steam sanitation, carpet & seat shampooing, leather cleaning & conditioning, meticulous crevice vacuuming, and UV interior protection.',
     fullDescription:
       'High-traffic vehicle interiors accumulate dirt, food crumbs, pet hair, moisture, and odors over time. Our Premium Interior Cleaning gives your cabin a meticulous revitalization. Whether you drive a compact commuter, family SUV, work truck, or sports coupe, our interior process restores freshness, hygiene, and comfort.',
-    image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80',
+    image: f7,
     altText: 'Immaculately detailed modern car interior dashboard and leather seats',
     included: [
       'Comprehensive vacuuming of carpets, seats, trunk, and crevices',
@@ -538,49 +547,49 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-1',
     title: 'Red BMW X5 M-Sport Ceramic Coat',
     category: 'Ceramic Coating',
-    image: 'https://images.unsplash.com/photo-1555353540-64580b51c258?auto=format&fit=crop&w=1200&q=80',
+    image: f1,
     caption: 'Deep gloss reflection and multi-year ceramic coating applied to high-performance SUV.',
   },
   {
     id: 'gal-2',
     title: 'Precision Dual-Action Paint Correction',
     category: 'Paint Correction',
-    image: 'https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1200&q=80',
+    image: f3,
     caption: 'Removing swirl marks and fine defects on dark metallic clear coat for mirror clarity.',
   },
   {
     id: 'gal-3',
     title: 'Luxury Leather & Cockpit Detail',
     category: 'Interior',
-    image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=80',
+    image: f4,
     caption: 'Complete interior vacuum, steam sanitization, and matte OEM leather conditioning.',
   },
   {
     id: 'gal-4',
     title: 'Hydrophobic Ceramic Water Beading',
     category: 'Ceramic Coating',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80',
+    image: f5,
     caption: 'Extreme water contact angle ensuring effortless maintenance in rainy BC weather.',
   },
   {
     id: 'gal-5',
     title: 'Full-Size Heavy Duty Truck Detail',
     category: 'Exterior',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80',
+    image: f6,
     caption: 'Multi-stage foam wash, chrome polishing, and tire conditioning on a heavy-duty pickup.',
   },
   {
     id: 'gal-6',
     title: 'German Sedan Full Interior & Exterior Reset',
     category: 'Full Detail',
-    image: 'https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=1200&q=80',
+    image: f7,
     caption: 'Comprehensive transformation covering wheel wells, door jambs, upholstery, and paint.',
   },
   {
     id: 'gal-7',
     title: 'Sports Coupe Deep Gloss Paint Finish',
     category: 'Paint Correction',
-    image: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80',
+    image: f8,
     caption: '2-step compound and polish bringing out rich metallic flakes and crisp body lines.',
   },
   {
