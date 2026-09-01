@@ -57,7 +57,7 @@ export const Header: React.FC = () => {
             </a>
             <div className="hidden md:flex items-center gap-1.5 text-neutral-400">
               <Clock className="w-3.5 h-3.5 text-[#D72229]" />
-              <span>Mon–Fri: 9am–6pm | Sun: 9am–5pm</span>
+              <span>Mon–Sun: 24/7 </span>
             </div>
           </div>
 
