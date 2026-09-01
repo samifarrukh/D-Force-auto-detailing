@@ -10,12 +10,12 @@ export const ServicesPage: React.FC = () => {
   const { navigate, openQuoteModal } = useNavigation();
 
   useEffect(() => {
-    document.title = 'Professional Car Detailing Services | RM Detailing Abbotsford';
+    document.title = 'Professional Car Detailing Services | D Force Auto Detailing Abbotsford';
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        'Explore RM Detailing car detailing services in Abbotsford: Ceramic coating, paint correction, interior shampooing, exterior wash, and complete car care.'
+        'Explore D Force Auto Detailing car detailing services in Abbotsford: Ceramic coating, paint correction, interior shampooing, exterior wash, and complete car care.'
       );
     }
   }, []);

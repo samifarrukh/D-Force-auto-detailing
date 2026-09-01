@@ -174,13 +174,13 @@ export const LocationDetailPage: React.FC<LocationDetailPageProps> = ({ location
         </div>
       </section>
 
-      {/* Why Local Owners Choose RM Detailing */}
+      {/* Why Local Owners Choose D Force Auto Detailing */}
       <section className="py-16 sm:py-20 bg-white border-b border-neutral-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-8 text-center space-y-6">
           <SectionHeading
             titlePrefix="WHY"
             highlightText={location.cityName.toUpperCase()}
-            titleSuffix="CAR OWNERS TRUST RM DETAILING"
+            titleSuffix="CAR OWNERS TRUST D FORCE AUTO DETAILING"
             subtitle="Quality, Punctuality & Verified 5.0 Star Feedback"
           />
 
@@ -249,7 +249,7 @@ export const LocationDetailPage: React.FC<LocationDetailPageProps> = ({ location
           />
 
           <ElfsightWidget
-            appId="elfsight-app-5e313753-351d-484c-ad1c-2c07dfd07fd3"
+            appId={BUSINESS_INFO.elfsightGoogleReviewsAppId}
             className="w-full"
           />
         </div>

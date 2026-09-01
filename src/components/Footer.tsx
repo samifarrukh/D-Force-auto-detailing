@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
                 <Shield className="w-5 h-5 text-[#D72229]" />
               </div>
               <span className="font-extrabold text-xl tracking-tight text-white">
-                RM <span className="text-[#D72229]">DETAILING</span>
+                D FORCE <span className="text-[#D72229]">AUTO DETAILING</span>
               </span>
             </div>
 
@@ -36,10 +36,10 @@ export const Footer: React.FC = () => {
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                 ))}
-                <span className="text-white text-xs font-bold ml-1.5">{BUSINESS_INFO.googleRating.toFixed(1)}</span>
+                <span className="text-white text-xs font-bold ml-1.5">{BUSINESS_INFO.ratingDisplay}</span>
               </div>
               <p className="text-[11px] text-neutral-400">
-                Verified 5-Star Customer Satisfaction Rating in Abbotsford, BC
+                Verified 5.0 Star Google Rating (28 reviews) in Abbotsford, BC
               </p>
             </div>
           </div>
@@ -151,8 +151,7 @@ export const Footer: React.FC = () => {
               <div className="flex items-start gap-2.5 text-neutral-400">
                 <Clock className="w-4 h-4 text-[#D72229] mt-0.5 shrink-0" />
                 <div>
-                  <p>Mon–Fri: 9:00 AM – 6:00 PM</p>
-                  <p>Sunday: 9:00 AM – 5:00 PM</p>
+                  <p>{BUSINESS_INFO.hoursDisplay}</p>
                 </div>
               </div>
             </div>

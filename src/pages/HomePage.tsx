@@ -98,7 +98,7 @@ export const HomePage: React.FC = () => {
           />
 
           <p className="text-sm sm:text-base md:text-lg text-neutral-700 leading-relaxed max-w-2xl mx-auto font-normal">
-            At RM Detailing, we treat every car, truck, and SUV with the utmost care and attention. From durable ceramic coatings to deep interior sanitation and precision paint correction, our services are structured to revitalize your vehicle and keep it looking exceptional in all seasons.
+            At D Force Auto Detailing, we treat every car, truck, and SUV with the utmost care and attention. From durable ceramic coatings to deep interior sanitation and precision paint correction, our services are structured to revitalize your vehicle and keep it looking exceptional in all seasons.
           </p>
 
           <div className="pt-2">
@@ -114,7 +114,7 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* ============================================================
-          SECTION 3 — WHY CHOOSE RM DETAILING (Icon Benefits)
+          SECTION 3 — WHY CHOOSE D FORCE AUTO DETAILING (Icon Benefits)
           ============================================================ */}
       <section className="py-14 sm:py-20 bg-[#f8f9fa] border-b border-neutral-200/70">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
@@ -285,7 +285,7 @@ export const HomePage: React.FC = () => {
           {/* Elfsight Google Reviews Widget */}
           <div className="min-h-[250px] flex items-center justify-center">
             <ElfsightWidget
-              appId="elfsight-app-5e313753-351d-484c-ad1c-2c07dfd07fd3"
+              appId={BUSINESS_INFO.elfsightGoogleReviewsAppId}
               className="w-full"
             />
           </div>
@@ -305,7 +305,7 @@ export const HomePage: React.FC = () => {
           />
 
           <p className="text-center text-xs sm:text-sm text-neutral-600 max-w-2xl mx-auto mb-10">
-            RM Detailing proudly serves vehicle owners throughout Abbotsford and neighboring communities with top-rated mobile and workshop detailing solutions.
+            D Force Auto Detailing proudly serves vehicle owners throughout Abbotsford and neighboring communities with top-rated workshop detailing solutions open 24 hours.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -364,7 +364,7 @@ export const HomePage: React.FC = () => {
           {/* Elfsight Instagram Widget */}
           <div className="mt-8 mb-10 min-h-[250px]">
             <ElfsightWidget
-              appId="elfsight-app-add898e2-60fb-44f2-af34-f3ba3bd66494"
+              appId={BUSINESS_INFO.elfsightInstagramAppId}
               className="w-full"
             />
           </div>
@@ -414,7 +414,7 @@ export const HomePage: React.FC = () => {
 
             <div className="md:col-span-7 space-y-4 text-left">
               <span className="text-xs font-bold text-[#D72229] uppercase tracking-widest">
-                About RM Detailing
+                About D Force Auto Detailing
               </span>
 
               <h3 className="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-[#141414]">
@@ -423,7 +423,7 @@ export const HomePage: React.FC = () => {
               </h3>
 
               <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
-                Car detailing is about preservation, precision, and genuine vehicle care. While automated car washes quickly sweep over surfaces with harsh abrasive brushes, RM Detailing focuses on meticulous hands-on processes that protect clear coat integrity, extract interior pollutants, and seal surfaces against Fraser Valley road grime.
+                Car detailing is about preservation, precision, and genuine vehicle care. While automated car washes quickly sweep over surfaces with harsh abrasive brushes, D Force Auto Detailing focuses on meticulous hands-on processes that protect clear coat integrity, extract interior pollutants, and seal surfaces against Fraser Valley road grime.
               </p>
 
               <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -436,7 +436,7 @@ export const HomePage: React.FC = () => {
                   onClick={() => navigate('/about')}
                   className="bg-[#D72229] hover:bg-[#b81b22] text-white text-xs uppercase font-bold tracking-wider px-7 py-3 rounded-full shadow-sm transition-all transform hover:scale-[1.02] cursor-pointer"
                 >
-                  ABOUT RM DETAILING
+                  ABOUT D FORCE AUTO DETAILING
                 </button>
               </div>
             </div>

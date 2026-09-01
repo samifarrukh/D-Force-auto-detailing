@@ -10,12 +10,12 @@ export const AboutPage: React.FC = () => {
   const { openQuoteModal } = useNavigation();
 
   useEffect(() => {
-    document.title = 'About RM Detailing | Premium Car Care in Abbotsford, BC';
+    document.title = 'About D Force Auto Detailing | Car Detailing in Abbotsford, BC';
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        'Learn about RM Detailing in Abbotsford, BC. Our philosophy is rooted in meticulous vehicle care, attention to detail, and quality results.'
+        'Learn about D Force Auto Detailing in Abbotsford, BC. Professional car detailing service, ceramic coatings, and paint correction open 24 hours.'
       );
     }
   }, []);
@@ -29,7 +29,7 @@ export const AboutPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=2000&q=80"
-            alt="About RM Detailing vehicle care banner"
+            alt="About D Force Auto Detailing vehicle care banner"
             className="w-full h-full object-cover object-center opacity-35"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/70" />
@@ -42,7 +42,7 @@ export const AboutPage: React.FC = () => {
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white leading-tight">
-            ABOUT <span className="text-[#D72229]">RM DETAILING</span>
+            ABOUT <span className="text-[#D72229]">D FORCE AUTO DETAILING</span>
           </h1>
 
           <p className="mt-4 text-sm sm:text-base md:text-lg text-neutral-200 max-w-2xl mx-auto">
@@ -73,7 +73,7 @@ export const AboutPage: React.FC = () => {
               </h2>
 
               <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed">
-                RM Detailing was established around a simple but unwavering premise: vehicles are significant investments that deserve meticulous, honest care. Rather than treating car washing as a hurried assembly line, we take the time to examine every panel, crease, stitch, and wheel.
+                D Force Auto Detailing was established around a simple but unwavering premise: vehicles are significant investments that deserve meticulous, honest care. Rather than treating car washing as a hurried assembly line, we take the time to examine every panel, crease, stitch, and wheel.
               </p>
 
               <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed">
@@ -88,7 +88,7 @@ export const AboutPage: React.FC = () => {
                   ))}
                 </div>
                 <p className="text-xs font-bold text-neutral-800">
-                  5.0 Google Rating from Fraser Valley Vehicle Owners
+                  5.0 Google Rating (28 reviews) from Abbotsford & Fraser Valley Vehicle Owners
                 </p>
               </div>
             </div>
@@ -179,7 +179,7 @@ export const AboutPage: React.FC = () => {
           />
 
           <ElfsightWidget
-            appId="elfsight-app-5e313753-351d-484c-ad1c-2c07dfd07fd3"
+            appId={BUSINESS_INFO.elfsightGoogleReviewsAppId}
             className="w-full"
           />
         </div>
@@ -189,7 +189,7 @@ export const AboutPage: React.FC = () => {
       <section className="py-16 sm:py-20 bg-[#141414] text-white text-center border-t-2 border-[#D72229]">
         <div className="max-w-3xl mx-auto px-4 sm:px-8 space-y-6">
           <h2 className="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-white">
-            Experience the RM Detailing Difference
+            Experience the D Force Auto Detailing Difference
           </h2>
           <p className="text-xs sm:text-sm text-neutral-300">
             Book your car detailing, ceramic coating, or paint correction service in Abbotsford today.

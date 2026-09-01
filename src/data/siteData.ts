@@ -1,21 +1,35 @@
 import { ServiceItem, LocationItem, GalleryItem } from '../types';
 
 export const BUSINESS_INFO = {
-  name: 'RM Detailing',
-  legalName: 'RM Detailing LLC',
-  phone: '+1 778-878-3577',
-  displayPhone: '+1 (778) 878-3577',
-  phoneHref: 'tel:+17788783577',
-  whatsappRaw: '17788783577',
-  whatsappDisplay: '+1 (778) 878-3577',
-  whatsappHref: 'https://wa.me/17788783577?text=Hi%20RM%20Detailing!%20I%20would%20like%20to%20inquire%20about%20a%20detailing%20quote%20in%20Abbotsford.',
-  location: 'Abbotsford, British Columbia, Canada',
+  name: 'D Force Auto Detailing',
+  legalName: 'D Force Auto Detailing',
+  category: 'Car Detailing Service',
+  phone: '+1 604-750-5580',
+  displayPhone: '+1 604-750-5580',
+  phoneHref: 'tel:+16047505580',
+  whatsappRaw: '16047505580',
+  whatsappDisplay: '+1 604-750-5580',
+  whatsappHref: 'https://wa.me/16047505580?text=Hi%20D%20Force%20Auto%20Detailing!%20I%20would%20like%20to%20inquire%20about%20a%20detailing%20quote%20in%20Abbotsford.',
+  address: '2711 Centennial St, Abbotsford, BC V2T 0G4, Canada',
+  streetAddress: '2711 Centennial St',
+  postalCode: 'V2T 0G4',
+  plusCode: '3M25+F7 Abbotsford, British Columbia, Canada',
+  location: '2711 Centennial St, Abbotsford, BC V2T 0G4, Canada',
+  city: 'Abbotsford',
+  region: 'British Columbia',
+  country: 'Canada',
   primaryCity: 'Abbotsford, BC',
   googleRating: 5.0,
-  reviewCount: 48,
-  hours: 'Monday – Friday: 9:00 AM – 6:00 PM | Sunday: 9:00 AM – 5:00 PM',
+  reviewCount: 28,
+  ratingDisplay: '5.0 (28 reviews)',
+  hours: 'Open 24 Hours',
+  hoursDisplay: 'Open 24 Hours (7 Days a Week)',
+  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.7467783105135!2d-122.34601207740658!3d49.05198659504157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485cb106da01e4f%3A0xa6c21fe619835338!2sD%20Force%20auto%20detailing!5e1!3m2!1sen!2s!4v1788274722632!5m2!1sen!2s',
+  mapDirectionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=D+Force+Auto+Detailing+2711+Centennial+St+Abbotsford+BC+V2T+0G4',
   instagram: 'https://instagram.com',
   facebook: 'https://facebook.com',
+  elfsightGoogleReviewsAppId: 'elfsight-app-7aca8dc9-773c-4349-b6ac-62598de072a4',
+  elfsightInstagramAppId: 'elfsight-app-54299f9d-1232-4d63-99ae-784e7f0e55f2',
 };
 
 export const SERVICES: ServiceItem[] = [
@@ -25,7 +39,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'CERAMIC COATING',
     headlineTitle: 'Ceramic Coatings',
     subtitle: 'Industry Leading Protection and Breath-Taking Finish',
-    metaTitle: 'Ceramic Coating in Abbotsford, BC | RM Detailing',
+    metaTitle: 'Ceramic Coating in Abbotsford, BC | D Force Auto Detailing',
     metaDescription: 'Professional ceramic coating services in Abbotsford, BC. Durable hydrophobic paint protection, high-gloss shine, and environmental resistance.',
     h1: 'Professional Ceramic Coating in Abbotsford',
     shortDescription:
@@ -91,7 +105,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'PREMIUM EXTERIOR CLEANING',
     headlineTitle: 'Premium Exterior Cleaning',
     subtitle: 'Elegant Reset & Deep Decontamination',
-    metaTitle: 'Exterior Car Detailing in Abbotsford, BC | RM Detailing',
+    metaTitle: 'Exterior Car Detailing in Abbotsford, BC | D Force Auto Detailing',
     metaDescription: 'Professional exterior car detailing in Abbotsford, BC. Foam hand wash, iron decontamination, wheel cleaning, tire dressing, and paint sealant.',
     h1: 'Professional Exterior Car Detailing in Abbotsford',
     shortDescription:
@@ -153,7 +167,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'PREMIUM INTERIOR CLEANING',
     headlineTitle: 'Premium Interior Cleaning',
     subtitle: 'Prepare To Be Amazed with a Fresh Cabin',
-    metaTitle: 'Interior Car Detailing in Abbotsford, BC | RM Detailing',
+    metaTitle: 'Interior Car Detailing in Abbotsford, BC | D Force Auto Detailing',
     metaDescription: 'Professional interior car detailing in Abbotsford, BC. Steam cleaning, carpet shampooing, leather conditioning, dust removal, and cabin refresh.',
     h1: 'Professional Interior Car Detailing in Abbotsford',
     shortDescription:
@@ -214,7 +228,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'FULL CAR DETAILING',
     headlineTitle: 'Full Car Detailing',
     subtitle: 'The Complete Interior & Exterior Transformation',
-    metaTitle: 'Full Car Detailing in Abbotsford, BC | RM Detailing',
+    metaTitle: 'Full Car Detailing in Abbotsford, BC | D Force Auto Detailing',
     metaDescription: 'Complete full car detailing services in Abbotsford, BC. Comprehensive interior deep clean paired with full exterior wash, decontamination, and protection.',
     h1: 'Complete Car Detailing Services in Abbotsford',
     shortDescription:
@@ -262,7 +276,7 @@ export const SERVICES: ServiceItem[] = [
       {
         question: 'How do I book an appointment?',
         answer:
-          'You can request a quick quote online through our form or call us directly at +1 778-878-3577.',
+          'You can request a quick quote online through our form or call us directly at +1 604-750-5580.',
       },
     ],
     relatedServiceSlugs: ['ceramic-coating-abbotsford', 'paint-correction-abbotsford', 'interior-car-detailing-abbotsford'],
@@ -273,7 +287,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'PAINT CORRECTION',
     headlineTitle: 'Paint Correction',
     subtitle: 'Optimize Your Paint’s Complexion & Clarity',
-    metaTitle: 'Paint Correction in Abbotsford, BC | RM Detailing',
+    metaTitle: 'Paint Correction in Abbotsford, BC | D Force Auto Detailing',
     metaDescription: 'Professional paint correction in Abbotsford, BC. Machine polishing to remove swirl marks, light scratches, oxidation, and restore mirror reflection.',
     h1: 'Professional Paint Correction in Abbotsford',
     shortDescription:
@@ -331,11 +345,11 @@ export const LOCATIONS: LocationItem[] = [
     slug: 'car-detailing-abbotsford',
     cityName: 'Abbotsford',
     region: 'Fraser Valley, BC',
-    metaTitle: 'Car Detailing Abbotsford BC | RM Detailing',
-    metaDescription: 'Top-rated car detailing in Abbotsford, BC. Professional ceramic coating, paint correction, interior & exterior detailing services. Call +1 778-878-3577.',
+    metaTitle: 'Car Detailing Abbotsford BC | D Force Auto Detailing',
+    metaDescription: 'Top-rated car detailing in Abbotsford, BC. Professional ceramic coating, paint correction, interior & exterior detailing services. Call +1 604-750-5580.',
     h1: 'Professional Car Detailing in Abbotsford, BC',
     intro:
-      'As our home base, RM Detailing provides Abbotsford vehicle owners with high-standard auto detailing, paint correction, and ceramic protection tailored to Fraser Valley driving conditions.',
+      'As our home base, D Force Auto Detailing provides Abbotsford vehicle owners with high-standard auto detailing, paint correction, and ceramic protection tailored to Fraser Valley driving conditions.',
     localContext:
       'From navigating Highway 1 commutes and wet winter road spray to hot summer dust in East Abbotsford and Whatcom, local vehicles encounter substantial environmental wear. Our detailing services are specifically engineered to protect and rejuvenate your car’s exterior paint and interior cabin against seasonal BC elements.',
     features: [
@@ -360,7 +374,7 @@ export const LOCATIONS: LocationItem[] = [
       {
         question: 'How do I request a quote for detailing in Abbotsford?',
         answer:
-          'You can submit our quick quote form or call us directly at +1 778-878-3577 for immediate assistance.',
+          'You can submit our quick quote form or call us directly at +1 604-750-5580 for immediate assistance.',
       },
     ],
     nearbySlugs: ['car-detailing-chilliwack', 'car-detailing-mission-bc', 'car-detailing-aldergrove', 'car-detailing-langley'],
@@ -370,13 +384,13 @@ export const LOCATIONS: LocationItem[] = [
     slug: 'car-detailing-chilliwack',
     cityName: 'Chilliwack',
     region: 'Fraser Valley, BC',
-    metaTitle: 'Car Detailing Chilliwack BC | RM Detailing',
-    metaDescription: 'Premium car detailing services for Chilliwack, BC. Expert ceramic coating, interior steam cleaning, exterior wash & paint correction. Call +1 778-878-3577.',
+    metaTitle: 'Car Detailing Chilliwack BC | D Force Auto Detailing',
+    metaDescription: 'Premium car detailing services for Chilliwack, BC. Expert ceramic coating, interior steam cleaning, exterior wash & paint correction. Call +1 604-750-5580.',
     h1: 'Professional Car Detailing in Chilliwack, BC',
     intro:
       'Serving vehicle owners across Chilliwack, Sardis, Vedder Crossing, and Cultus Lake with dedicated automotive detailing and long-lasting paint preservation.',
     localContext:
-      'Chilliwack drivers frequently encounter agricultural dust, mountain highway debris, outdoor recreation mud from Vedder and Cultus Lake, and rainy winter grime. RM Detailing delivers deep interior cleaning, stain removal, and durable exterior paint sealants and ceramic coatings to keep your car looking pristine.',
+      'Chilliwack drivers frequently encounter agricultural dust, mountain highway debris, outdoor recreation mud from Vedder and Cultus Lake, and rainy winter grime. D Force Auto Detailing delivers deep interior cleaning, stain removal, and durable exterior paint sealants and ceramic coatings to keep your car looking pristine.',
     features: [
       'Serving Chilliwack, Sardis, Promontory, Vedder Crossing, and Rosedale',
       'Expertise with daily commuters, family SUVs, trucks, and luxury automobiles',
@@ -408,11 +422,11 @@ export const LOCATIONS: LocationItem[] = [
     slug: 'car-detailing-mission-bc',
     cityName: 'Mission',
     region: 'Fraser Valley, BC',
-    metaTitle: 'Car Detailing Mission BC | RM Detailing',
+    metaTitle: 'Car Detailing Mission BC | D Force Auto Detailing',
     metaDescription: 'Trusted car detailing services for Mission, BC. Professional interior car cleaning, exterior foam wash, ceramic coatings, and paint correction.',
     h1: 'Professional Car Detailing in Mission, BC',
     intro:
-      'RM Detailing proudly serves car owners in Mission, BC, providing top-tier automotive cleaning, interior sanitation, and paint correction services just across the Fraser River.',
+      'D Force Auto Detailing proudly serves car owners in Mission, BC, providing top-tier automotive cleaning, interior sanitation, and paint correction services just across the Fraser River.',
     localContext:
       'Vehicles in Mission navigate hilly terrain, forest tree sap, seasonal dampness, and Lougheed Highway road film. Our specialized detailing processes thoroughly remove sap, fallout, and dirt while sealing paint and glass against moisture and road grime.',
     features: [
@@ -436,7 +450,7 @@ export const LOCATIONS: LocationItem[] = [
       {
         question: 'How do I book auto detailing in Mission, BC?',
         answer:
-          'Contact RM Detailing by phone at +1 778-878-3577 or submit our online quote request form.',
+          'Contact D Force Auto Detailing by phone at +1 604-750-5580 or submit our online quote request form.',
       },
     ],
     nearbySlugs: ['car-detailing-abbotsford', 'car-detailing-aldergrove', 'car-detailing-langley'],
@@ -446,8 +460,8 @@ export const LOCATIONS: LocationItem[] = [
     slug: 'car-detailing-langley',
     cityName: 'Langley',
     region: 'Metro Vancouver / Fraser Valley, BC',
-    metaTitle: 'Car Detailing Langley BC | RM Detailing',
-    metaDescription: 'High-end car detailing for Langley, BC. Ceramic coating, paint enhancement, interior steam detailing, and full car care. Call +1 778-878-3577.',
+    metaTitle: 'Car Detailing Langley BC | D Force Auto Detailing',
+    metaDescription: 'High-end car detailing for Langley, BC. Ceramic coating, paint enhancement, interior steam detailing, and full car care. Call +1 604-750-5580.',
     h1: 'Professional Car Detailing in Langley, BC',
     intro:
       'Serving Langley City and Township with premium vehicle detailing, paint correction, and ceramic coatings designed for modern drivers and automotive enthusiasts.',
@@ -472,7 +486,7 @@ export const LOCATIONS: LocationItem[] = [
           'Yes, we are experienced with high-end sports cars, European luxury vehicles, electric vehicles (EVs), and custom trucks.',
       },
       {
-        question: 'Why choose RM Detailing for Langley vehicle owners?',
+        question: 'Why choose D Force Auto Detailing for Langley vehicle owners?',
         answer:
           'We focus on high quality, verified 5.0-star customer satisfaction, and careful attention to every detail of your vehicle.',
       },
@@ -484,13 +498,13 @@ export const LOCATIONS: LocationItem[] = [
     slug: 'car-detailing-aldergrove',
     cityName: 'Aldergrove',
     region: 'Fraser Valley, BC',
-    metaTitle: 'Car Detailing Aldergrove BC | RM Detailing',
-    metaDescription: 'Expert car detailing in Aldergrove, BC. Ceramic coating, paint correction, interior vacuum & shampoo, exterior foam wash. Call +1 778-878-3577.',
+    metaTitle: 'Car Detailing Aldergrove BC | D Force Auto Detailing',
+    metaDescription: 'Expert car detailing in Aldergrove, BC. Ceramic coating, paint correction, interior vacuum & shampoo, exterior foam wash. Call +1 604-750-5580.',
     h1: 'Professional Car Detailing in Aldergrove, BC',
     intro:
       'Providing Aldergrove vehicle owners with dependable, meticulous automotive detailing and paint protection services.',
     localContext:
-      'Located directly between Abbotsford and Langley along Fraser Highway, Aldergrove drivers need vehicle care that stands up to heavy highway travel, farm dust, and winter wetness. RM Detailing provides complete vehicle restoration, scratch-free hand washing, and protective sealants.',
+      'Located directly between Abbotsford and Langley along Fraser Highway, Aldergrove drivers need vehicle care that stands up to heavy highway travel, farm dust, and winter wetness. D Force Auto Detailing provides complete vehicle restoration, scratch-free hand washing, and protective sealants.',
     features: [
       'Serving Aldergrove, Gloucester, and adjacent rural Langley / Abbotsford borders',
       'Deep interior cleaning, leather conditioning, and carpet stain extraction',
@@ -507,7 +521,7 @@ export const LOCATIONS: LocationItem[] = [
       {
         question: 'How quickly can I get my vehicle detailed near Aldergrove?',
         answer:
-          'We provide flexible scheduling Monday through Friday (9 AM - 6 PM) and Sunday (9 AM - 5 PM). Contact us at +1 778-878-3577 for current availability.',
+          'We provide flexible scheduling and are open 24 hours. Contact us at +1 604-750-5580 for current availability.',
       },
       {
         question: 'Can you detail work trucks in Aldergrove?',

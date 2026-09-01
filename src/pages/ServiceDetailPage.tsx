@@ -172,12 +172,12 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service })
         </div>
       </section>
 
-      {/* 7. Why Choose RM Detailing */}
+      {/* 7. Why Choose D Force Auto Detailing */}
       <section className="py-14 sm:py-20 bg-[#f8f9fa] border-b border-neutral-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-8 text-center space-y-6">
           <SectionHeading
             titlePrefix="WHY CHOOSE"
-            highlightText="RM DETAILING"
+            highlightText="D FORCE AUTO DETAILING"
             subtitle="Dedicated to Craftsmanship & Customer Satisfaction"
           />
 
@@ -346,7 +346,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service })
           </h2>
 
           <p className="text-xs sm:text-sm text-neutral-300 max-w-xl mx-auto">
-            Contact RM Detailing today for an honest, upfront quote tailored to your vehicle’s condition.
+            Contact D Force Auto Detailing today for an honest, upfront quote tailored to your vehicle’s condition.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 pt-2">

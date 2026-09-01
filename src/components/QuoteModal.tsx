@@ -130,7 +130,7 @@ export const QuoteModal: React.FC = () => {
                   className="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white py-3 px-4 rounded-lg text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-sm transition-all transform hover:scale-[1.01] active:scale-[0.99]"
                 >
                   <WhatsAppIcon className="w-4 h-4 shrink-0" />
-                  <span>Send Booking via WhatsApp (+1 778-878-3577)</span>
+                  <span>Send Booking via WhatsApp ({BUSINESS_INFO.displayPhone})</span>
                 </a>
 
                 {/* 2. Add to Google Calendar Button */}
@@ -191,7 +191,7 @@ export const QuoteModal: React.FC = () => {
                   <input
                     type="tel"
                     required
-                    placeholder="e.g. 778-878-3577"
+                    placeholder="e.g. 604-750-5580"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full px-3 py-2 text-xs rounded border border-neutral-300 focus:border-[#D72229] focus:outline-none bg-neutral-50 focus:bg-white"

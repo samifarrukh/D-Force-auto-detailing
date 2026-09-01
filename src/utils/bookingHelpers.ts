@@ -6,7 +6,7 @@ import { BUSINESS_INFO } from '../data/siteData';
  */
 export function formatBookingWhatsAppMessage(formData: QuoteFormData): string {
   const parts = [
-    `🚗 *RM DETAILING - APPOINTMENT / QUOTE REQUEST*`,
+    `🚗 *D FORCE AUTO DETAILING - APPOINTMENT / QUOTE REQUEST*`,
     ``,
     `👤 *Client Name:* ${formData.name}`,
     `📞 *Phone:* ${formData.phone}`,
@@ -29,13 +29,13 @@ export function formatBookingWhatsAppMessage(formData: QuoteFormData): string {
   }
 
   parts.push(``);
-  parts.push(`Sent via RM Detailing Online Booking Portal (Abbotsford, BC)`);
+  parts.push(`Sent via D Force Auto Detailing Online Booking Portal (Abbotsford, BC)`);
 
   return parts.join('\n');
 }
 
 /**
- * Generates a direct WhatsApp link to RM Detailing (+1 778-878-3577) with pre-filled booking details.
+ * Generates a direct WhatsApp link to D Force Auto Detailing (+1 604-750-5580) with pre-filled booking details.
  */
 export function getWhatsAppBookingUrl(formData: QuoteFormData): string {
   const text = formatBookingWhatsAppMessage(formData);
@@ -46,7 +46,7 @@ export function getWhatsAppBookingUrl(formData: QuoteFormData): string {
  * Generates a general WhatsApp chat link with an optional custom message.
  */
 export function getGeneralWhatsAppUrl(customMessage?: string): string {
-  const text = customMessage || `Hi RM Detailing! I would like to inquire about detailing services in Abbotsford.`;
+  const text = customMessage || `Hi D Force Auto Detailing! I would like to inquire about detailing services in Abbotsford.`;
   return `https://wa.me/${BUSINESS_INFO.whatsappRaw}?text=${encodeURIComponent(text)}`;
 }
 
@@ -100,8 +100,8 @@ export function generateGoogleCalendarUrl(formData: QuoteFormData): string {
   const startCal = formatCalTime(startDate);
   const endCal = formatCalTime(endDate);
 
-  const title = `RM Detailing - ${formData.service || 'Vehicle Detailing'}`;
-  const location = `RM Detailing, Abbotsford, BC, Canada (Tel: ${BUSINESS_INFO.displayPhone})`;
+  const title = `D Force Auto Detailing - ${formData.service || 'Vehicle Detailing'}`;
+  const location = `D Force Auto Detailing, 2711 Centennial St, Abbotsford, BC V2T 0G4, Canada (Tel: ${BUSINESS_INFO.displayPhone})`;
   
   const details = [
     `Vehicle: ${formData.vehicleYear ? formData.vehicleYear + ' ' : ''}${formData.vehicleMakeModel || 'Client Vehicle'}`,
@@ -109,7 +109,7 @@ export function generateGoogleCalendarUrl(formData: QuoteFormData): string {
     `Location Area: ${formData.location || 'Abbotsford, BC'}`,
     `Client: ${formData.name || 'Client'} (${formData.phone || ''})`,
     `Studio Phone: ${BUSINESS_INFO.displayPhone}`,
-    `Website: RM Detailing Abbotsford`,
+    `Website: D Force Auto Detailing Abbotsford`,
     formData.message ? `Notes: ${formData.message}` : '',
   ].filter(Boolean).join('\n');
 

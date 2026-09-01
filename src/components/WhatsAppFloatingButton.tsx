@@ -38,7 +38,7 @@ export const WhatsAppFloatingButton: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         id="floating-whatsapp-btn"
-        aria-label="Chat with RM Detailing on WhatsApp (+1 778-878-3577)"
+        aria-label={`Chat with ${BUSINESS_INFO.name} on WhatsApp (${BUSINESS_INFO.displayPhone})`}
         className="relative group w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white flex items-center justify-center shadow-xl hover:shadow-2xl transition-all duration-200 transform hover:scale-108 active:scale-95"
       >
         {/* Pulse effect badge */}

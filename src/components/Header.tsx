@@ -96,7 +96,7 @@ export const Header: React.FC = () => {
             </div>
             <div className="flex flex-col">
               <span className="font-extrabold text-xl tracking-tight text-[#141414] leading-none">
-                RM <span className="text-[#D72229]">DETAILING</span>
+                D FORCE <span className="text-[#D72229]">AUTO DETAILING</span>
               </span>
               <span className="text-[10px] tracking-widest text-neutral-500 uppercase font-semibold mt-0.5">
                 Abbotsford, BC
@@ -471,7 +471,7 @@ export const Header: React.FC = () => {
                 className="w-full bg-[#25D366] text-white py-3 rounded-full text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2"
               >
                 <WhatsAppIcon className="w-4 h-4" />
-                <span>Chat on WhatsApp (+1 778-878-3577)</span>
+                <span>Chat on WhatsApp ({BUSINESS_INFO.displayPhone})</span>
               </a>
 
               <a

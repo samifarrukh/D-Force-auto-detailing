@@ -11,12 +11,12 @@ export const ServiceAreasPage: React.FC = () => {
   const { navigate, openQuoteModal } = useNavigation();
 
   useEffect(() => {
-    document.title = 'Car Detailing Service Areas | RM Detailing Fraser Valley';
+    document.title = 'Car Detailing Service Areas | D Force Auto Detailing Fraser Valley';
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        'RM Detailing proudly serves vehicle owners in Abbotsford, Chilliwack, Mission, Langley, and Aldergrove, British Columbia.'
+        'D Force Auto Detailing proudly serves vehicle owners in Abbotsford, Chilliwack, Mission, Langley, and Aldergrove, British Columbia.'
       );
     }
   }, []);
@@ -47,7 +47,7 @@ export const ServiceAreasPage: React.FC = () => {
           </h1>
 
           <p className="mt-4 text-sm sm:text-base md:text-lg text-neutral-200 max-w-2xl mx-auto leading-relaxed">
-            RM Detailing proudly serves vehicle owners in Abbotsford and surrounding communities across the Fraser Valley.
+            D Force Auto Detailing proudly serves vehicle owners in Abbotsford and surrounding communities across the Fraser Valley.
           </p>
         </div>
       </section>
@@ -132,7 +132,7 @@ export const ServiceAreasPage: React.FC = () => {
           />
 
           <ElfsightWidget
-            appId="elfsight-app-5e313753-351d-484c-ad1c-2c07dfd07fd3"
+            appId={BUSINESS_INFO.elfsightGoogleReviewsAppId}
             className="w-full"
           />
         </div>
@@ -165,7 +165,7 @@ export const ServiceAreasPage: React.FC = () => {
           />
 
           <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed max-w-2xl mx-auto">
-            Whether you are dealing with winter highway slush along the Trans-Canada Highway, seasonal tree sap in Mission, or trail dust in Chilliwack, RM Detailing has the tools, chemistry, and dedication to keep your vehicle in prime condition.
+            Whether you are dealing with winter highway slush along the Trans-Canada Highway, seasonal tree sap in Mission, or trail dust in Chilliwack, D Force Auto Detailing has the tools, chemistry, and dedication to keep your vehicle in prime condition.
           </p>
 
           <div className="pt-4">

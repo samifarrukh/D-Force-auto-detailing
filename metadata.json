@@ -1,6 +1,6 @@
 {
-  "name": "RM Detailing",
-  "description": "Premium Car Detailing in Abbotsford, BC. Professional vehicle care including ceramic coating, paint correction, interior & exterior detailing.",
+  "name": "D Force Auto Detailing",
+  "description": "Car Detailing Service in Abbotsford, BC. Professional ceramic coating, paint correction, interior & exterior detailing open 24 hours.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

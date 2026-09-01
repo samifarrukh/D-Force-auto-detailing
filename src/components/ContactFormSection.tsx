@@ -178,7 +178,7 @@ export const ContactFormSection: React.FC<ContactFormSectionProps> = ({
                     className="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white py-3 px-4 rounded-lg text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-sm transition-all transform hover:scale-[1.01]"
                   >
                     <WhatsAppIcon className="w-4 h-4 shrink-0" />
-                    <span>Send Booking Details to +1 778-878-3577 on WhatsApp</span>
+                    <span>Send Booking Details to {BUSINESS_INFO.displayPhone} on WhatsApp</span>
                   </a>
 
                   {/* Google Calendar Action */}
@@ -255,7 +255,7 @@ export const ContactFormSection: React.FC<ContactFormSectionProps> = ({
                     <input
                       type="tel"
                       required
-                      placeholder="e.g. 778-878-3577"
+                      placeholder="e.g. 604-750-5580"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-3.5 py-3 text-xs bg-white rounded border border-neutral-300 focus:border-[#D72229] focus:outline-none transition-colors"

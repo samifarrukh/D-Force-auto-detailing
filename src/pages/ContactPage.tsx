@@ -9,12 +9,12 @@ import { MapPin, Phone, Clock, Star, ShieldCheck, Mail, Navigation } from 'lucid
 
 export const ContactPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'Contact RM Detailing | Car Detailing in Abbotsford, BC';
+    document.title = 'Contact D Force Auto Detailing | Car Detailing in Abbotsford, BC';
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        'Contact RM Detailing in Abbotsford, BC. Call +1 778-878-3577 or request an online vehicle detailing quote today.'
+        'Contact D Force Auto Detailing in Abbotsford, BC. Call +1 604-750-5580 or request an online vehicle detailing quote today. Open 24 hours.'
       );
     }
   }, []);
@@ -28,7 +28,7 @@ export const ContactPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=2000&q=80"
-            alt="Contact RM Detailing banner"
+            alt="Contact D Force Auto Detailing banner"
             className="w-full h-full object-cover object-center opacity-35"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/70" />
@@ -121,10 +121,10 @@ export const ContactPage: React.FC = () => {
             <div className="lg:col-span-4 bg-white p-6 sm:p-8 rounded-xl border border-neutral-200 shadow-xs space-y-6">
               <div>
                 <h3 className="text-lg font-extrabold uppercase text-[#141414] tracking-tight">
-                  RM Detailing Abbotsford
+                  {BUSINESS_INFO.name}
                 </h3>
                 <p className="text-xs text-neutral-500 mt-1">
-                  Abbotsford, British Columbia, Canada
+                  {BUSINESS_INFO.address}
                 </p>
               </div>
 
@@ -143,7 +143,7 @@ export const ContactPage: React.FC = () => {
                   <Clock className="w-4 h-4 text-[#D72229] mt-0.5 shrink-0" />
                   <div>
                     <span className="font-bold text-neutral-900 block">Hours of Operation</span>
-                    <span>Monday – Sunday: By Appointment</span>
+                    <span>{BUSINESS_INFO.hoursDisplay}</span>
                   </div>
                 </div>
 
@@ -158,7 +158,7 @@ export const ContactPage: React.FC = () => {
 
               <div className="pt-2 border-t border-neutral-100">
                 <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=RM+Detailing+Abbotsford+BC"
+                  href={BUSINESS_INFO.mapDirectionsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-[#D72229] hover:bg-[#b81b22] text-white text-xs font-bold uppercase tracking-wider py-3 rounded-full flex items-center justify-center gap-2 transition-all shadow-xs"
@@ -178,12 +178,12 @@ export const ContactPage: React.FC = () => {
           <SectionHeading
             titlePrefix="WHAT CLIENTS"
             highlightText="SAY ABOUT"
-            titleSuffix="RM DETAILING"
+            titleSuffix="D FORCE AUTO DETAILING"
             subtitle="Verified 5.0 Star Google Reviews"
           />
 
           <ElfsightWidget
-            appId="elfsight-app-5e313753-351d-484c-ad1c-2c07dfd07fd3"
+            appId={BUSINESS_INFO.elfsightGoogleReviewsAppId}
             className="w-full"
           />
         </div>

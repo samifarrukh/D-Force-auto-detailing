@@ -12,12 +12,12 @@ export const GalleryPage: React.FC = () => {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Car Detailing Gallery | RM Detailing Abbotsford, BC';
+    document.title = 'Car Detailing Gallery | D Force Auto Detailing Abbotsford, BC';
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        'View recent vehicle detailing transformations by RM Detailing in Abbotsford, BC. Ceramic coating, paint correction, interior & exterior detailing.'
+        'View recent vehicle detailing transformations by D Force Auto Detailing in Abbotsford, BC. Ceramic coating, paint correction, interior & exterior detailing.'
       );
     }
   }, []);
@@ -115,7 +115,7 @@ export const GalleryPage: React.FC = () => {
 
           <div className="min-h-[280px]">
             <ElfsightWidget
-              appId="elfsight-app-add898e2-60fb-44f2-af34-f3ba3bd66494"
+              appId={BUSINESS_INFO.elfsightInstagramAppId}
               className="w-full"
             />
           </div>
@@ -129,7 +129,7 @@ export const GalleryPage: React.FC = () => {
             Want Your Vehicle to Look Like This?
           </h2>
           <p className="text-xs sm:text-sm text-neutral-300">
-            Reach out to RM Detailing today for custom recommendations in Abbotsford and Fraser Valley.
+            Reach out to D Force Auto Detailing today for custom recommendations in Abbotsford and Fraser Valley.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5">
             <button

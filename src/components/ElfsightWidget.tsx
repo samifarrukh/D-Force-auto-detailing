@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 interface ElfsightWidgetProps {
-  appId: string; // e.g. "elfsight-app-5e313753-351d-484c-ad1c-2c07dfd07fd3" or "elfsight-app-add898e2-60fb-44f2-af34-f3ba3bd66494"
+  appId: string; // e.g. "elfsight-app-7aca8dc9-773c-4349-b6ac-62598de072a4" or "elfsight-app-54299f9d-1232-4d63-99ae-784e7f0e55f2"
   className?: string;
   fallbackTitle?: string;
   fallbackSubtitle?: string;

@@ -14,7 +14,7 @@ export const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
   return (
     <div className={`w-full overflow-hidden rounded-xl border border-neutral-200 shadow-sm bg-neutral-100 relative ${className}`}>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191400.688070181!2d-122.26766850000001!3d49.087045499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cccdbda39a89059%3A0xabd6f94a54833376!2sRM%20Detailing!5e1!3m2!1sen!2s!4v1788263292270!5m2!1sen!2s"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.7467783105135!2d-122.34601207740658!3d49.05198659504157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485cb106da01e4f%3A0xa6c21fe619835338!2sD%20Force%20auto%20detailing!5e1!3m2!1sen!2s!4v1788274722632!5m2!1sen!2s"
         width="100%"
         height="100%"
         className={`w-full ${heightClass} border-0 block`}
@@ -22,7 +22,7 @@ export const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
         allowFullScreen
         loading="lazy"
         referrerPolicy="strict-origin-when-cross-origin"
-        title="RM Detailing Google Map Location in Abbotsford, BC"
+        title="D Force Auto Detailing Google Map Location in Abbotsford, BC"
       />
     </div>
   );
